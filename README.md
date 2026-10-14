@@ -1,11 +1,21 @@
 # Readme
 
+## Citation
+
+```bibtex
+@article{li2026last,
+  title={Why Last-Iterate Scale-Invariant Regret Matching Converges Linearly?},
+  author={Li, Boning and Huang, Longbo},
+  journal={arXiv preprint arXiv:2609.38162},
+  year={2026}
+}
+```
+
+## Conclusion
+
 Source code for the paper *Why last-iterate scale-invariant regret matching converges linearly?*
 
-The code implements the scale-invariant regret-matching algorithm IREG-PRM+
-(extra-gradient setup of Zhang et al., *Scale-Invariant Regret Matching and
-Online Learning with Optimal Convergence*, EC 2026, arXiv:2510.04407,
-Algorithm 2) and reproduces every experimental result of the paper:
+The code implements the scale-invariant regret-matching algorithm IREG-PRM+ and reproduces every experimental result of the paper:
 
 - **5 predictions on 216 random matrix games** (support freezing; the
   last-iterate rate equals the local spectrum of the frozen-face Jacobian;
