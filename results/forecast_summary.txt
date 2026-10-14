@@ -1,0 +1,16 @@
+instances forecastable: 129
+primary rate used: onsupp=100.0%  g2=0.0%  n2=0.0%
+fwd_max (onsupp primary, snap calib): median 1.499  p90 1.902  max 3.902
+fwd_max < 2: 91.5%  < 5: 100.0%
+fwd_max (g2 fallback, snap calib): median 1.499  p90 1.902  max 3.902
+calibration sensitivity: median 1.131
+kappa_emp_consistent (onsupp): median 1.631  max 4.100
+kappa_emp_consistent (g2): median 1.631  max 4.100
+identity fwd_max <= kappa_emp: OK
+post_freeze (snap_t >= t_freeze_exact): 100.0%
+n2 proxy (telescoped Delta norm^2) fwd_max: median 1.517  p90 3885437.7  max 81567377.3
+n2 proxy < 2 (finite only): 76.0%
+n2 proxy diverges (>100, norm^2 noise floor): n=19  ['d20_gaussian_plain_s11', 'd20_gaussian_plain_s4', 'd20_gaussian_plain_s5', 'd20_gaussian_plain_s8', 'd20_pm1_sparse_antisym_s1', 'd20_pm1_sparse_antisym_s7']
+norm_sat<0.1 (exponential-type): n=129 fwd_max med=1.499 max=3.9
+0.1<=norm_sat<1.0: n=129 fwd_max med=1.499 max=3.9
+gap span (decades, median): 2.0

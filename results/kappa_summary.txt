@@ -1,0 +1,37 @@
+kappa ratio-certificate empirical check (window = theta_fix.py 129-instance logic; converged rebuild = nb_closedform converged mode, T_end = min(T, 4*snap_t + 2000))
+instances: 129 theta-usable; 124 with assembled kappa_theory; 5 excluded:
+  EXCLUDED d20_pm1_sparse_antisym_s10: degenerate_kernel (supp=12x12, n_ker=2)
+  EXCLUDED d20_pm1_sparse_antisym_s4: degenerate_kernel (supp=10x10, n_ker=2)
+  EXCLUDED d20_pm1_sparse_antisym_s7: degenerate_kernel (supp=11x11, n_ker=3)
+  EXCLUDED d20_pm1_sparse_antisym_s9: degenerate_kernel (supp=9x9, n_ker=3)
+  EXCLUDED d20_pm1_sparse_plain_s2: degenerate_support (supp=7x9, n_ker=?)
+
+== kappa_emp (exact Ndot_tot = telescoped N^2 increments, repr-guarded) ==
+kappa_emp_ndot: n=123 median=1.644 p90=5.332e+06 max=8.157e+07 min=1.049
+instances with >= 6 guarded exact-Ndot increments: 123/124
+== kappa_emp (cancellation-free proxy Delta sum||g||^2, theta_fix numerator) ==
+kappa_emp_g2: n=124 median=1.634 p90=2.176 max=4.101 min=1.056
+== kappa_emp (PRIMARY: on-support energy increments, exact Delta N_tot) ==
+kappa_emp_onsupp: n=124 median=1.626 p90=2.352 max=4.1 min=1.063
+
+== kappa_theory (assembled, realized-window eta range; lower bound on the paper's kappa) ==
+kappa_theory_win: n=124 median=1.694e+08 p90=8.743e+09 max=3.576e+11 min=444.8
+kappa_theory_reg (paper regime rectangle): n=124 median=2.93e+10 p90=1.633e+12 max=5.742e+13 min=4.975e+04
+eta_+/eta_- realized in window: n=124 median=1 p90=1 max=1 min=1
+
+== verdict: kappa_emp <= kappa_theory (theory predicts 100%) ==
+ndot: 119/123 hold (96.7%)
+  VIOLATION d20_gaussian_plain_s4: kappa_emp_ndot=3.828e+07 > kappa_theory_win=6.231e+06
+  VIOLATION d20_gaussian_plain_s5: kappa_emp_ndot=9.529e+06 > kappa_theory_win=8.913e+06
+  VIOLATION d20_gaussian_plain_s8: kappa_emp_ndot=2.273e+07 > kappa_theory_win=1.5e+06
+  VIOLATION d20_uniform_plain_s0: kappa_emp_ndot=5.465e+06 > kappa_theory_win=4.794e+06
+g2: 124/124 hold (100.0%)
+onsupp: 124/124 hold (100.0%)
+
+== conservatism: slack = kappa_theory_win / kappa_emp ==
+slack_ndot: n=123 median=4.03e+07 p90=5.559e+09 max=1.554e+11 min=0.066
+slack_g2: n=124 median=1.179e+08 p90=5.754e+09 max=1.769e+11 min=145
+slack_onsupp: n=124 median=1.154e+08 p90=4.819e+09 max=1.491e+11 min=140.2
+
+== rerun quality (gap at converged rebuild state) ==
+gap_end: n=129 median=7.816e-10 p90=1.849e-06 max=1.295e-05 min=1.388e-16

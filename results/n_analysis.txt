@@ -1,0 +1,24 @@
+total instances: 216
+
+== N1: active-set freezing ==
+t_freeze/T median=0.000265 p90=0.001535 max=0.5255
+frozen before T/2: 99.5%
+EXACT-zero pattern freeze (hard prediction): t/T median=0.000265 p90=0.001535; frozen before T/2: 99.5%
+final pattern == LP support (both players): 84.3%
+|gamma - v*| final: median=4.47e-17 p90=6.73e-16
+
+== N3: norm saturation levels ==
+N_inf: median=1.75 max=7.98 (eta_inf = 1/N_inf all positive by construction)
+
+== N1b: late-half clip-loss ratio (loss/||g||^2) ==
+median=0.262 p90=0.262 max=0.262
+
+== ratio-certificate exponent: log Ndot vs log gap, THEORY = 2 ==
+theta: median=0.375 p10=0.198 p90=0.800 (n=168)
+
+== N2: spectral prediction (slope_pred = log rho2) ==
+usable pairs: 155 (no-snapshot: 32, bad fit/positive slope: 29)
+corr(log(-slope_pred), log(-slope_meas)) = 0.9982   [HARD TARGET > 0.9]
+pred/meas ratio: median=1.000 p10=0.984 p90=1.016
+unit eigenvalues per instance: median=2 min=2 max=10  (expect >= 2: scale dirs)
+FD consistency (median rel col diff): median=6e-07 p90=1.7e-06

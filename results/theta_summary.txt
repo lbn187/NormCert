@@ -1,0 +1,10 @@
+usable instances: 129/216 (window: t>=snap_t, dG2 repr-guard, gap>1e-13)
+gap decades in window: median 2.81, p10 2.35
+theta_xy   (all)          : n=129 median=1.995 [p10 1.965, p90 2.031] frac_in_[1.8,2.2]=98.4%
+theta_xy   (R2>=0.8)      : n=129 median=1.995 [p10 1.965, p90 2.031] frac_in_[1.8,2.2]=98.4%
+theta_ratio(all)          : n=129 median=2.004 [p10 1.977, p90 2.039] frac_in_[1.8,2.2]=98.4%
+theta_ratio(R2_gap>=0.8)  : n=129 median=2.004 [p10 1.977, p90 2.039] frac_in_[1.8,2.2]=98.4%
+theta_Ndot (exact, repr.) : n=128 median=1.948 [p10 1.476, p90 2.039] frac_in_[1.8,2.2]=71.9%
+theta_onsupp usable: 129/129 (on-support energy, exact Delta N_tot)
+theta_onsupp(all)         : n=129 median=1.986 [p10 1.911, p90 2.038] frac_in_[1.8,2.2]=96.1%
+theta_onsupp(R2>=0.8)     : n=129 median=1.986 [p10 1.911, p90 2.038] frac_in_[1.8,2.2]=96.1%

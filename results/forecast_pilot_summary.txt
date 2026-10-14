@@ -1,0 +1,8 @@
+instances forecastable: 185
+fwd_max (snap calib): median 2.212  p90 972565.952  max 10491451.020
+fwd_max < 2: 38.4%
+calibration sensitivity: median nan
+kappa_emp_consistent: median 2.946  p90 1600118.054
+identity fwd_max <= kappa_emp: OK
+post_freeze (snap_t >= t_freeze_exact): 100.0%
+gap span (decades, median): nan

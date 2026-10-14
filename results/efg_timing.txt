@@ -1,0 +1,3 @@
+EFG wall-clock: one NashConv evaluation vs one iteration (warmup 2000, 400 reps, single thread)
+Kuhn: t_iter median 1.355 ms [IQR 1.277, 1.396]  t_nashconv median 0.103 ms [IQR 0.090, 0.104]  ratio nashconv/iter = 0.076
+Leduc: t_iter median 53.847 ms [IQR 51.987, 57.502]  t_nashconv median 4.665 ms [IQR 4.575, 4.855]  ratio nashconv/iter = 0.087
