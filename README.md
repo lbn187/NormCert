@@ -1,7 +1,6 @@
-# Norm saturation and last-iterate convergence in regret matching
+# Readme
 
-Source code for the paper *Norm Saturation Explains Last-Iterate Convergence in
-Regret Matching* (ICLR 2027 submission).
+Source code for the paper *Why last-iterate scale-invariant regret matching converges linearly?*
 
 The code implements the scale-invariant regret-matching algorithm IREG-PRM+
 (extra-gradient setup of Zhang et al., *Scale-Invariant Regret Matching and
