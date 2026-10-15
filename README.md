@@ -1,4 +1,4 @@
-# Readme
+# Linear Last-Iterate Regret Matching
 
 ## Citation
 
@@ -15,7 +15,7 @@
 
 Source code for the paper *Why last-iterate scale-invariant regret matching converges linearly?*
 
-The code implements the scale-invariant regret-matching algorithm IREG-PRM+ and reproduces every experimental result of the paper:
+The code implements the scale-invariant regret-matching algorithm **IREG-PRM+ (IR-PCFR+)** and reproduces every experimental result of the paper:
 
 - **5 predictions on 216 random matrix games** (support freezing; the
   last-iterate rate equals the local spectrum of the frozen-face Jacobian;
